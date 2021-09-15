@@ -1,0 +1,13 @@
+<hr class="featurette-divider">
+<div class="row featurette my-2">
+    <h2 class="featurette-heading">{{ include.name }}</h2>
+    <div class="col-md-8">
+      <p class="lead">
+        {{ include.text }}
+       </p>
+       <a class="btn btn-lg btn-dark" href="{{ include.link }}">Visit Site</a>
+    </div>
+    <div class="col-md-2">
+        <img src="{{ site.baseurl }}/assets/img/{{ include.image }}" width="250" height="250" style="object-fit: cover; background-color: lightgrey;" />
+    </div>
+</div>

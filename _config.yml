@@ -1,0 +1,25 @@
+title: March Triathlon Series
+author:
+  email: webmaster@calpolytriathlon.com
+  name: Daisy Kamp
+
+description: >-
+  The official online home for the California Polytechnic State University (SLO)
+  Triathlon Team. We are a club sports team that aims to make tri fun and
+  accessible for students with all levels of ability and commitment.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+social_links:
+  facebook: cptri
+  instagram:  cptri
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - assets/img/full-size/*

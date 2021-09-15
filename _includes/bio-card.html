@@ -1,0 +1,27 @@
+{% if include.person.photo %}
+    {% assign photo = include.person.photo %}
+{% else %}
+    {% assign photo = "default.png" %}
+{% endif %}
+
+<div>
+    <div class="card">
+        <div class="bio-img-wrapper">
+            <img src="{{ site.baseurl }}/assets/img/bios/{{ photo }}" class="card-img-top">
+        </div>
+        <div class="card-header">
+            <h5 class="card-title">{{ include.person.name }}</h5>
+            <h6 class="card-subtitle text-muted">{{ include.person.role }}</h6>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                {% if include.person.hometown %}
+                    <strong>Hometown:</strong> {{ include.person.hometown }} <br/>
+                {% endif %}
+                {% if include.person.fact %}
+                    <strong>Fun Fact:</strong> {{ include.person.fact }}
+                {% endif %}
+            </li>
+          </ul>
+    </div>
+</div>
