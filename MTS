@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>March Triathlon Series</title>
+  </head>
+  <body>
+    <nav id="navbar"></nav>
+    <main>
+      <div class="container"> <img src="media/MTSHomeImage.jpg" alt="Walking To The Lake"
+
+          style="width:100%; height:45vh; object-fit:cover;" margin-bottom="-20%">
+        <h1 class="title" align="center">March Triathlon Series 2023</h1>
+        <h2 align="center">March 25th, 2023 </h2>
+        <br>
+        <h2 align="center">Registration closes Wednesday, March 22nd at 11:59pm</h2>
+        <br>
+        <h2 align="center"> <a href="https://www.eventbrite.com/e/march-triathlon-series-2023-tickets-381523004577"
+
+            class="link">REGISTER NOW</a></h2>
+      </div>
+      <p align="left">   The March Triathlon Series is the longest running
+        collegiate triathlon in the West Coast. The event started as a senior
+        project in 1998 and was held on campus at Cal Poly. Race participants
+        joined from Cal Poly, Santa Barbara, and Cal Berkeley with a total of 15
+        racers. The spring race served as a warm up for Wildflower, which was
+        the collegiate national championship race. Eventually, the race grew and
+        moved to Lake Lopez, Arroyo Grande in 2004, where it transformed into
+        the March Triathlon Series. <br>
+        <br>
+         The first race included an 800 yard pool swim, 23 mile bike along Hwy
+        1, and a 6 mile run through the agricultural fields at Cal Poly. Now,
+        the race includes a Sprint distance with an 800 yard swim, 12.3 mile
+        bike, and a 3.1 mile run, and an Olympic distance with a 1500 meter
+        swim, 24.7 mile bike, and a 6.2 mile run. <br>
+        <br>
+         Although it has changed a lot from its humble beginnings, the mission
+        of MTS has always been to produce a competitive sporting event, which
+        promotes athletic excellence, sportsmanship, and a love for the sport,
+        while providing a safe and supportive environment for athletes of all
+        skill levels, whether age-group or collegiate. <br>
+        <br>
+         MTS is proudly hosted by the Cal Poly Triathlon Team. All proceeds from
+        the event help provide our athletes low-cost club team membership,
+        affordable gear, as well as discounted race entries and travel fees to
+        collegiate races throughout California and to Collegiate Nationals. </p>
+    </main>
+    <script>
+	const navbar = document.getElementById("navbar");
+  
+  fetch("header.html")
+  	,then(response => response.text())
+  	,then(data => {
+    	navbar.innerHTML = data;
+    	console.log("Header Loaded")
+  });
+</script>
+  </body>
+</html>
